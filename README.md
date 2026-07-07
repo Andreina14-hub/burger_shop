@@ -1,3 +1,6 @@
+¡Perfecto! Ahora sí que tenemos la radiografía exacta de tu proyecto. Veo que en src tienes carpetas clave como lang (para multiidioma/traducciones) y styles, y dentro de components organizas todo por módulos funcionales (about, cart, contact, home, layout, login, myOrders, notFound404, profile).
+He actualizado la sección Estructura del Proyecto para reflejar este árbol de directorios real y exacto. Además, añadí el soporte multiidioma en la descripción de tecnologías.
+Aquí tienes la versión definitiva lista para copiar y pegar:
 # 🍔 Burger Shop - Prototipo Web para Hostelería
 
 ¡Bienvenido al repositorio de **Burger Shop**! Este proyecto es un prototipo interactivo de sitio web diseñado específicamente para el sector de la hostelería y restauración, enfocado en una hamburguesería moderna. 
@@ -56,3 +59,27 @@ src/
 ├── styles/                 # Hojas de estilo y configuraciones de diseño (CSS / SCSS)
 ├── App.js                  # Componente raíz y configuración de rutas (HashRouter)
 └── index.js                # Punto de entrada de la aplicación React
+
+💻 Instalación y Configuración Local
+Si deseas clonar este proyecto y ejecutarlo en tu entorno local, sigue estos sencillos pasos:
+ * Clonar el repositorio:
+   git clone [https://github.com/Andreina14-hub/burger_shop.git](https://github.com/Andreina14-hub/burger_shop.git)
+
+ * Navegar al directorio del proyecto:
+   cd burger_shop
+
+ * Instalar las dependencias:
+   npm install
+
+ * Iniciar el servidor de desarrollo:
+   npm start
+
+   La aplicación se abrirá automáticamente en tu navegador en la dirección http://localhost:3000.
+📦 Despliegue
+Este proyecto está configurado y desplegado de forma automática utilizando GitHub Pages, lo que permite una integración continua cada vez que se realizan mejoras en la rama main.
+✒️ Contribuciones y Personalización
+ * Andreina López García (andreina14-hub) - Adaptación responsive (medidas de móvil), optimización de la interfaz en secciones clave (Home, Footer, Menu), corrección del enrutamiento mediante HashRouter y gestión del despliegue en producción.
+🙏 Agradecimientos
+Este proyecto se desarrolló tomando como base un diseño inicial y estructura colaborativa construida por Deepali, kumar045 y Sklup55. Agradecimientos a ellos por la base del código.
+Este proyecto fue desarrollado con fines educativos y de portafolio para demostrar habilidades en arquitectura de componentes React, desarrollo modular de interfaces y maquetación adaptativa orientada al sector hostelero.
+
