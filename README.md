@@ -1,34 +1,6 @@
-💻 Instalación y Configuración Local
-Si deseas clonar este proyecto y ejecutarlo en tu entorno local, sigue estos sencillos pasos:
- * Clonar el repositorio:
-   git clone [https://github.com/andreina14-hub/burger_shop.git](https://github.com/andreina14-hub/burger_shop.git)
-
- * Navegar al directorio del proyecto:
-   cd burger_shop
-
- * Instalar las dependencias:
-   npm install
-
- * Iniciar el servidor de desarrollo:
-   npm start
-
-   La aplicación se abrirá automáticamente en tu navegador en la dirección http://localhost:3000.
-📦 Despliegue
-Este proyecto está configurado y desplegado de forma automática utilizando GitHub Pages, lo que permite una integración continua cada vez que se realizan mejoras en la rama principal.
-✒️ Autora
- * Andreina - Desarrollo Completo - andreina14-hub
-Este proyecto fue desarrollado con fines educativos y de portafolio para demostrar habilidades en arquitectura de componentes React, maquetación adaptativa y diseño enfocado a negocios de hostelería.
-"""
-with open("README.md", "w", encoding="utf-8") as f:
-f.write(readme_content)
-print("README.md creado exitosamente.")
-El archivo `README.md` para tu proyecto de GitHub ha sido generado exitosamente. 
-
-[file-tag: code-generated-file-0-1783444478995151519]
-
-Aquí tienes el contenido estructurado y listo para que lo copies directamente en tu repositorio de GitHub:
-
-```markdown
+Mirando las capturas de los commits de tu repositorio, me he dado cuenta de un detalle muy importante. Veo que el proyecto original incluye commits de otros desarrolladores como Deepali, kumar045 y Sklup55 hace unos 3 años, y tus contribuciones (Andreina14-hub) empezaron hace unos 2 años.
+Esto significa que el repositorio es un fork o una versión basada en una plantilla/proyecto base previo, lo cual es súper común en el desarrollo de software. Al presentar este proyecto en tu portafolio, es una excelente práctica de honestidad profesional y colaboración dar el crédito correspondiente.
+He ajustado el README.md incluyendo una sección de Agradecimientos / Créditos y refinando los detalles técnicos basados en tus commits reales (como el uso de HashRouter, que se ve claramente en tu historial de commits).
 # 🍔 Burger Shop - Prototipo Web para Hostelería
 
 ¡Bienvenido al repositorio de **Burger Shop**! Este proyecto es un prototipo interactivo de sitio web diseñado específicamente para el sector de la hostelería y restauración, enfocado en una hamburguesería moderna. 
@@ -41,11 +13,11 @@ El objetivo principal de este desarrollo es ofrecer una experiencia de usuario (
 
 ## 🚀 Características Principales
 
-- **Diseño Responsive Completo:** Optimizado para dispositivos móviles, tablets y ordenadores de escritorio. La navegación se adapta perfectamente a cualquier tamaño de pantalla.
+- **Diseño Responsive Completo:** Optimizado para dispositivos móviles, tablets y ordenadores de escritorio. La navegación se adapta perfectamente a cualquier tamaño de pantalla (medidas de móvil optimizadas).
 - **Menú Interactivo:** Navegación fluida a través de las diferentes categorías de productos (Hamburguesas, Acompañamientos, Bebidas, Postres).
 - **Sistema de Carrito de Compras (Simulado):** Permite a los usuarios añadir, modificar la cantidad y eliminar productos en tiempo real, calculando automáticamente el total del pedido.
+- **Enrutamiento Dinámico:** Navegación interna limpia sin recargar la página mediante el uso de enrutadores en el cliente.
 - **Interfaz Moderna y Atractiva:** Uso de tipografías contemporáneas, contrastes dinámicos y transiciones suaves que abren el apetito del consumidor.
-- **Secciones de Fidelización:** Incluye apartados estratégicos para promociones, opiniones de clientes y localización del establecimiento.
 
 ---
 
@@ -55,13 +27,14 @@ Para el desarrollo de este prototipo se han empleado herramientas y estándares 
 
 ### Tecnologías Core
 * **React.js:** Librería de JavaScript utilizada para construir la interfaz de usuario basada en componentes reutilizables y gestionar el estado global de la aplicación (como el carrito de compras).
+* **React Router (HashRouter):** Implementado para garantizar un enrutamiento estable y compatible con el despliegue en GitHub Pages.
 * **HTML5 & CSS3:** Estructuración semántica y estilos avanzados para lograr un acabado profesional y accesible.
 * **JavaScript (ES6+):** Lógica interactiva del negocio, manejo de eventos y filtrado de productos.
 
 ### Recursos Visuales y Estilísticos
-* **Fuentes (Google Fonts):** Combinación de tipografías que refuerzan la identidad de marca (ej. *Poppins* / *Montserrat* para legibilidad y dinamismo).
+* **Fuentes (Google Fonts):** Combinación de tipografías que refuerzan la identidad de marca para mejorar la legibilidad y el dinamismo.
 * **Iconografía (FontAwesome / React Icons):** Iconos vectoriales limpios para la navegación, el carrito de compras y las redes sociales.
-* **Imágenes de Alta Resolución:** Recursos visuales obtenidos de plataformas como [Unsplash](https://unsplash.com/) y [Pexels](https://pexels.com/), optimizados para la web con el fin de garantizar tiempos de carga rápidos sin perder calidad.
+* **Imágenes de Alta Resolución:** Recursos visuales optimizados para la web con el fin de garantizar tiempos de carga rápidos sin perder calidad.
 
 ---
 
@@ -100,12 +73,9 @@ Si deseas clonar este proyecto y ejecutarlo en tu entorno local, sigue estos sen
    La aplicación se abrirá automáticamente en tu navegador en la dirección http://localhost:3000.
 📦 Despliegue
 Este proyecto está configurado y desplegado de forma automática utilizando GitHub Pages, lo que permite una integración continua cada vez que se realizan mejoras en la rama principal.
-✒️ Autora
- * Andreina - Desarrollo Completo - andreina14-hub
+✒️ Contribuciones y Personalización
+ * Andreina López García (andreina14-hub) - Adaptación responsive, ajustes de interfaz (Home, Footer, Menú), corrección de rutas con HashRouter y mantenimiento del despliegue.
+🙏 Agradecimientos
+Este proyecto se desarrolló tomando como base un diseño inicial y estructura colaborativa construida por Deepali, kumar045 y Sklup55. Agradecimientos a ellos por la base del código.
 Este proyecto fue desarrollado con fines educativos y de portafolio para demostrar habilidades en arquitectura de componentes React, maquetación adaptativa y diseño enfocado a negocios de hostelería.
-
-### 💡 Consejos adicionales para tu repositorio:
-1. **Añade capturas de pantalla:** Si puedes, guarda una imagen de la web (o un GIF animado del carrito funcionando) dentro de una carpeta llamada `screenshots/` y añádela al inicio del archivo usando `![Vista Previa](screenshots/home.png)` para que llame mucho más la atención.
-2. **Personalización:** Modifica los nombres de las carpetas en la sección *Estructura del Proyecto* si usaste una organización de archivos diferente en tu código local.
-
 
