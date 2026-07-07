@@ -1,11 +1,8 @@
-Mirando las capturas de los commits de tu repositorio, me he dado cuenta de un detalle muy importante. Veo que el proyecto original incluye commits de otros desarrolladores como Deepali, kumar045 y Sklup55 hace unos 3 años, y tus contribuciones (Andreina14-hub) empezaron hace unos 2 años.
-Esto significa que el repositorio es un fork o una versión basada en una plantilla/proyecto base previo, lo cual es súper común en el desarrollo de software. Al presentar este proyecto en tu portafolio, es una excelente práctica de honestidad profesional y colaboración dar el crédito correspondiente.
-He ajustado el README.md incluyendo una sección de Agradecimientos / Créditos y refinando los detalles técnicos basados en tus commits reales (como el uso de HashRouter, que se ve claramente en tu historial de commits).
 # 🍔 Burger Shop - Prototipo Web para Hostelería
 
 ¡Bienvenido al repositorio de **Burger Shop**! Este proyecto es un prototipo interactivo de sitio web diseñado específicamente para el sector de la hostelería y restauración, enfocado en una hamburguesería moderna. 
 
-El objetivo principal de este desarrollo es ofrecer una experiencia de usuario (UX) fluida, intuitiva y visualmente atractiva, simulando el proceso de exploración de menús, selección de productos y gestión de pedidos.
+El objetivo principal de este desarrollo es ofrecer una experiencia de usuario (UX) fluida, intuitiva y visualmente atractiva, simulando el proceso de exploración de menús, perfiles de usuario, gestión de carritos y seguimiento de pedidos.
 
 🌐 **Demo en vivo:** [Visitar Burger Shop](https://andreina14-hub.github.io/burger_shop/)
 
@@ -13,11 +10,11 @@ El objetivo principal de este desarrollo es ofrecer una experiencia de usuario (
 
 ## 🚀 Características Principales
 
-- **Diseño Responsive Completo:** Optimizado para dispositivos móviles, tablets y ordenadores de escritorio. La navegación se adapta perfectamente a cualquier tamaño de pantalla (medidas de móvil optimizadas).
-- **Menú Interactivo:** Navegación fluida a través de las diferentes categorías de productos (Hamburguesas, Acompañamientos, Bebidas, Postres).
-- **Sistema de Carrito de Compras (Simulado):** Permite a los usuarios añadir, modificar la cantidad y eliminar productos en tiempo real, calculando automáticamente el total del pedido.
-- **Enrutamiento Dinámico:** Navegación interna limpia sin recargar la página mediante el uso de enrutadores en el cliente.
-- **Interfaz Moderna y Atractiva:** Uso de tipografías contemporáneas, contrastes dinámicos y transiciones suaves que abren el apetito del consumidor.
+- **Diseño Responsive Optimizado:** Totalmente adaptado para dispositivos móviles, tablets y ordenadores de escritorio, garantizando una visualización correcta en cualquier pantalla (medidas móviles ajustadas).
+- **Flujo Completo de Hostelería:** Simulación de secciones críticas como inicio (`home`), información (`about`), contacto (`contact`), inicio de sesión (`login`), perfil de usuario (`profile`) y pedidos (`myOrders`).
+- **Sistema de Carrito de Compras (Simulado):** Interacción integrada para añadir productos, gestionar cantidades y visualizar el total del pedido en tiempo real.
+- **Soporte Multiidioma:** Preparado para la localización e internacionalización de la plataforma gracias a su estructura de lenguaje dedicada.
+- **Enrutamiento Estable:** Navegación interna limpia utilizando estrategias de enrutamiento del lado del cliente (`HashRouter`) para evitar recargas innecesarias y asegurar la compatibilidad con GitHub Pages.
 
 ---
 
@@ -26,56 +23,36 @@ El objetivo principal de este desarrollo es ofrecer una experiencia de usuario (
 Para el desarrollo de este prototipo se han empleado herramientas y estándares modernos de la industria web:
 
 ### Tecnologías Core
-* **React.js:** Librería de JavaScript utilizada para construir la interfaz de usuario basada en componentes reutilizables y gestionar el estado global de la aplicación (como el carrito de compras).
-* **React Router (HashRouter):** Implementado para garantizar un enrutamiento estable y compatible con el despliegue en GitHub Pages.
-* **HTML5 & CSS3:** Estructuración semántica y estilos avanzados para lograr un acabado profesional y accesible.
-* **JavaScript (ES6+):** Lógica interactiva del negocio, manejo de eventos y filtrado de productos.
+* **React.js:** Librería de JavaScript utilizada para construir la interfaz de usuario basada en componentes reutilizables y la gestión del estado de la aplicación.
+* **React Router:** Implementado para gestionar la navegación asíncrona entre las distintas secciones de la web de manera fluida.
+* **HTML5 & CSS3 / SCSS:** Estructuración semántica y estilos modulares organizados para lograr un acabado profesional y dinámico.
+* **JavaScript (ES6+):** Lógica interactiva del negocio, manejo de eventos y renderizado dinámico de vistas.
 
-### Recursos Visuales y Estilísticos
-* **Fuentes (Google Fonts):** Combinación de tipografías que refuerzan la identidad de marca para mejorar la legibilidad y el dinamismo.
-* **Iconografía (FontAwesome / React Icons):** Iconos vectoriales limpios para la navegación, el carrito de compras y las redes sociales.
-* **Imágenes de Alta Resolución:** Recursos visuales optimizados para la web con el fin de garantizar tiempos de carga rápidos sin perder calidad.
+### Recursos Visuales
+* **Fuentes (Google Fonts):** Combinación tipográfica seleccionada para reforzar la identidad corporativa y la legibilidad del menú.
+* **Iconografía:** Iconos vectoriales limpios y legibles para el carrito de compras, el perfil de usuario y los elementos interactivos del menú.
+* **Imágenes de Alta Resolución:** Recursos visuales optimizados para web con el fin de garantizar tiempos de carga rápidos sin perder calidad visual.
 
 ---
 
 ## 📂 Estructura del Proyecto
 
-A continuación se detalla la organización de los archivos principales dentro del proyecto React:
+La arquitectura del código fuente está organizada meticulosamente de manera modular dentro de la carpeta `src`:
 
 ```bash
-burger_shop/
-├── public/                 # Archivos públicos estáticos (index.html, favicon, etc.)
-├── src/                    # Código fuente de la aplicación
-│   ├── components/         # Componentes reutilizables (Navbar, Footer, ProductCard)
-│   ├── context/            # Gestión del estado global (Carrito de compras)
-│   ├── data/               # Archivos de datos locales (Menú de productos en JSON)
-│   ├── pages/              # Vistas principales de la web (Home, Menu, Contact)
-│   ├── styles/             # Archivos de estilos (CSS / SASS)
-│   ├── App.js              # Componente raíz principal
-│   └── index.js            # Punto de entrada de React
-├── package.json            # Dependencias y scripts del proyecto
-└── README.md               # Documentación del proyecto
-
-💻 Instalación y Configuración Local
-Si deseas clonar este proyecto y ejecutarlo en tu entorno local, sigue estos sencillos pasos:
- * Clonar el repositorio:
-   git clone [https://github.com/andreina14-hub/burger_shop.git](https://github.com/andreina14-hub/burger_shop.git)
-
- * Navegar al directorio del proyecto:
-   cd burger_shop
-
- * Instalar las dependencias:
-   npm install
-
- * Iniciar el servidor de desarrollo:
-   npm start
-
-   La aplicación se abrirá automáticamente en tu navegador en la dirección http://localhost:3000.
-📦 Despliegue
-Este proyecto está configurado y desplegado de forma automática utilizando GitHub Pages, lo que permite una integración continua cada vez que se realizan mejoras en la rama principal.
-✒️ Contribuciones y Personalización
- * Andreina López García (andreina14-hub) - Adaptación responsive, ajustes de interfaz (Home, Footer, Menú), corrección de rutas con HashRouter y mantenimiento del despliegue.
-🙏 Agradecimientos
-Este proyecto se desarrolló tomando como base un diseño inicial y estructura colaborativa construida por Deepali, kumar045 y Sklup55. Agradecimientos a ellos por la base del código.
-Este proyecto fue desarrollado con fines educativos y de portafolio para demostrar habilidades en arquitectura de componentes React, maquetación adaptativa y diseño enfocado a negocios de hostelería.
-
+src/
+├── assets/                 # Recursos estáticos locales (imágenes, logos, etc.)
+├── components/             # Módulos y componentes funcionales de la app
+│   ├── about/              # Sección de información sobre el negocio
+│   ├── cart/               # Vista y lógica del carrito de compras
+│   ├── contact/            # Formulario y datos de contacto
+│   ├── home/               # Página de inicio y destacados
+│   ├── layout/             # Componentes estructurales globales (Navbar, Footer, etc.)
+│   ├── login/              # Formulario de inicio de sesión de usuario
+│   ├── myOrders/           # Panel de seguimiento de pedidos del cliente
+│   ├── notFound404/        # Vista personalizada para rutas no existentes
+│   └── profile/            # Perfil de usuario y datos de cuenta
+├── lang/                   # Archivos y configuración para soporte multiidioma
+├── styles/                 # Hojas de estilo y configuraciones de diseño (CSS / SCSS)
+├── App.js                  # Componente raíz y configuración de rutas (HashRouter)
+└── index.js                # Punto de entrada de la aplicación React
